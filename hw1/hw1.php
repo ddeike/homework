@@ -44,7 +44,7 @@
 </head>
 <body>
 	<h1 id='main'>Homework One - Day Turns to Night</h1>
-	<p id='main'><?php echo 'There are twenty four hours in the day, and this is hour number ',$timeofday,'.'; ?></p>
+	<p id='main'><?php echo 'There are twenty four hours in the day, and this is hour number '?><strong><?= $timeofday?></strong><?= '.'?></p>
 	<p id='main'><img src="<?=$imageinthesky?>" alt="Sky photo" width="800px"></p>
 	
 </body>
