@@ -1,5 +1,21 @@
-<style type='text/css'>
-       body {
-           background-color:<?=$background_color?>
-        }
-</style>
+	.night {
+	font-family: 'Bigelow Rules', cursive;	
+	background-color:#00246B;
+	color:#99CCFF;
+	}
+	.day
+	{
+	font-family: 'Bigelow Rules', cursive;
+	background-color:#FFE9BF;	
+	}
+
+	p#main {
+	font-size:36px;
+	width:800px;
+	margin-right:auto; 
+	margin-left:auto;
+	}
+	h1#main {
+	font-size:56pt;
+	
+	}

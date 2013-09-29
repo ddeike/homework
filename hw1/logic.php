@@ -1,22 +1,16 @@
 <?php
+		//Sets time zone to Pacific
+		date_default_timezone_set('America/Los_Angeles');
 
-	//Sets time zone to Pacific
-	date_default_timezone_set('America/Los_Angeles');
-	
-	//$timeofday is being calcuated by date()
-	$timeofday = date(G);
-	
-	//this may be overly complex to calculate
-	if( $timeofday <= 6) {
-			$background_color = '#00246B';
-	}
+		//$timeofday is being calcuated by date()
+		//$timeofday = date('G');
+		$timeofday = 21;
 
-	else if( $timeofday > 6) {
-			$background_color = '#FFE9BF';
-	}
-	
-	else( $timeofday <= 20) {
-			$background_color = '#00246B';
-	}
-
-?>	
+		// here's the logic. shifting styling to css. keeping php here.
+		if ($timeofday < 6 OR $timeofday > 20) {
+		$class = 'night'; $imageinthesky = 'images/moon.jpg';
+		}
+		else {
+		$class = 'day'; $imageinthesky = 'images/sun.jpg'; 
+		}
+?>
